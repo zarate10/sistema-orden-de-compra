@@ -1,0 +1,47 @@
+.main-form-items { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.601);
+    z-index: 100000;
+}
+.main-form-items .box-forms { 
+    max-width: 425px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background: #0c141c;
+}
+.main-form-items form { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.main-form-items form input, 
+.main-form-items form select { 
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: aqua;
+    border: none;
+}
+.main-form-items button { 
+    padding: 5px 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,422 @@
+.wrapper-container-main { 
+    max-width: 500px;
+    height: 80vh;
+    background: #0c141c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+} 
+.modal {
+    width: 100%;
+    background: #0c141c;
+    position: relative;
+}
+.modal > .title { 
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.modal select { 
+    padding:2vh;
+    display: flex;
+    border: 2px dashed rgba(179, 179, 179, 0.098);
+    align-items: center;
+    margin-top: 3vh;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    font-size: 1.5vh;
+    margin-bottom: 2vh;
+    color: beige;
+}
+.modal > select { 
+    color: white;
+    background: rgba(255, 255, 255, 0.03);
+    transition: 0.3s;
+}
+.modal select:focus { 
+    outline: none;
+}
+.modal .icon-input { 
+    display: flex;
+    align-items: center;
+}
+.modal .icon-input span { 
+    min-height: 5vh;
+    max-height: 5vh;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    cursor:pointer;
+    padding: 2vh 0 2vh 0;
+    background: #1f2425;
+    color: gray;
+    font-size: 0.8em;
+    transition: 0.3s;
+   
+}
+.modal .icon-input i { 
+    width: 15%;
+    min-height: 5vh;
+    max-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: aqua;
+    padding: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+.modal .icon-input input { 
+    min-height: 5vh;
+    max-height: 5vh;
+    font-size: 1.5vh;
+    width: 100%;
+    padding: 2vh 0 2vh 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.778);
+    border: none;
+    align-items: center;
+    color: rgba(179, 179, 179, 0.492);
+    transition: 0.3s;
+    margin-bottom: 2vh;
+}
+.modal .icon-input input:focus { 
+    outline: none;
+}
+.modal .icon-input > button {
+    min-height: 5vh;
+    max-height: 5vh;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    cursor:pointer;
+    padding: 2vh 0 2vh 0;
+    background: #1f2425;
+    color: gray;
+    font-size: 12px;
+    transition: 0.3s;
+    margin-bottom: 2vh;
+}
+
+.modal .icon-input .fa-credit-card { 
+    color: gray;
+    background: #1f2425;
+    transition: 0.3s;
+}
+.modal .icon-input:hover > .fa-credit-card,
+.modal .icon-input:hover > button { 
+    background: aqua;
+    color: black;
+    transition: 0.3s;
+    
+}
+.modal p { 
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.7vh;
+    color: #ffffffbf;
+    margin-left: 1.38vh;
+
+    margin-bottom: 2vh;
+}
+.step { 
+    position: relative;
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.step p {
+    position: relative;
+    padding-left:8vh;
+    color: white;
+    
+}
+.step span { 
+    position: absolute;
+    left: 4vh;
+    font-size: 3vh;
+    top: -1.1vh;
+    font-weight: bold;
+}
+.modal select option { 
+    background: black;
+    border: none;
+    font-size: 1.1em;
+}
+.container-ticket-number { 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.container-ticket-number > span { 
+    color:white;
+    background: #33b42a;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.form-subir-comprobante { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5vh;
+}
+
+.btn-download { 
+    width: 100%;
+    padding: 8px;
+    background: #29c452;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-subir-comprobante label { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-subir-comprobante input { 
+    padding: 10px 15px;
+    width: 70%;
+    background: black;
+    border: none;
+    color: gray;
+    font-size: 0.7em;
+}
+.form-subir-comprobante button { 
+    padding: 10px;
+    width: 30%;
+    border: none;
+    font-size: 0.7em;
+    cursor: pointer;
+    background: #29c452;
+}
+.form-subir-comprobante button:focus { 
+    outline: none;
+}
+.btn-adm { 
+    width: 100%;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 0.75em;
+    border: none;
+    background: aqua;
+}
+
+.box-metodos-pago { 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-metodos-pago h3 { 
+
+    margin-bottom: 20px;
+}
+.box-metodos-pago .contenedor-metodos { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0rem 2rem;
+    gap: 5px;
+}
+.box-metodos-pago .contenedor-metodos .box-metodo { 
+    width: 100%;
+    height: 80px;
+    background: #0e1720;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-metodos-pago .contenedor-metodos .box-metodo img {
+    width: 80%;
+}
+@media (max-width: 1125px) { 
+    .wrapper-container-main { 
+        width: 100%;
+        background: #0c141c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+    } 
+    .box-metodos-pago img { 
+        width: 15vw;
+    }
+}
+
+.modal-tickets h5 { 
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.create-ticket-box { 
+    margin: 2vh 0; 
+    width: 100%;
+    position: relative;
+    color: black;
+}
+.create-ticket-box img { 
+    width: 100%;
+}
+.create-ticket-box .box-data-ticket { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.create-ticket-box .box-data-ticket .ticket-left {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2vh 0 2vh 7vh;
+}
+.create-ticket-box .box-data-ticket .ticket-right { 
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create-ticket-box .box-data-ticket .ticket-right p { 
+    transform: rotate(-90deg);
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-right: 45px;
+}
+
+.create-ticket-box .box-data-ticket .ticket-left__top { 
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.create-ticket-box .box-data-ticket .ticket-left__top > img { 
+    width: 22%;
+    animation: rotateReloj 2s;
+}
+
+@keyframes rotateReloj {
+    0% { transform: rotate(0);}
+    100% { transform: rotate(-360deg);}
+}
+.create-ticket-box .box-data-ticket .ticket-left__top p {
+    line-height: 15px;
+}
+.create-ticket-box .box-data-ticket .ticket-left__top span { 
+    font-weight: 600;
+}
+.create-ticket-box .box-data-ticket .ticket-left__bottom { 
+    width: 100%;
+    height: 55%;
+    display: flex;
+    margin-top: 5px;
+    padding-left: 0.5rem;
+}
+.create-ticket-box .box-data-ticket .ticket-left__bottom .box-data { 
+    width: 45%;
+    height: 100%;
+    text-transform: uppercase;
+}
+.create-ticket-box .box-data-ticket .ticket-left__bottom .box-info {
+    margin-bottom: 5px;
+}
+.create-ticket-box .box-data-ticket .ticket-left__bottom .box-info span { 
+    font-size: 0.7em;
+    
+}
+.create-ticket-box .box-data-ticket .ticket-left__bottom .box-info p { 
+    font-weight: 600;
+}
+
+.btn { 
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.7vh;
+    transition: 0.3s;
+    height: 5vh;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+}
+.btn i {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.primary { 
+    color: black;
+    background: aqua;
+    transition: 0.3s;
+}
+.second { 
+    color: #5d758b;
+    background: #121e29;
+    transition: 0.6s;
+}
+.primary:hover { 
+    transition: 0.3s;
+    animation: primaryhover 5s infinite;
+}
+.second:hover { 
+    transition: 0.6s;
+    background: white;
+    box-shadow: 4px 4px 0px aqua;
+    color: black;
+}
+
+@keyframes primaryhover {
+    0% { 
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.159);
+        color: black;
+    }
+    50% { 
+        background: rgb(67, 249, 252);
+        box-shadow: 0 0 40px rgba(55, 230, 198, 0.159);
+        color: black;
+    }
+    100% { 
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.159);
+        color: black;
+    }
+}

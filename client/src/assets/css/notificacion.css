@@ -1,0 +1,28 @@
+.wrapper-notify { 
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    height: 10vh;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 10000000;
+}
+.notify-container { 
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    padding: 1.5vh;
+    margin: 2vh 0;
+    font-size: 12px !important;
+    animation: show 0.8s;
+    position: fixed;
+    font-weight: 500;
+}
+
+@keyframes show {
+    0% { margin-top: 500px; }
+    100% { margin-top: 0; }
+}

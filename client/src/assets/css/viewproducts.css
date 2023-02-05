@@ -1,0 +1,213 @@
+.view-products-wrapper { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgba(0, 0, 0, 0.468);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-main-box { 
+    max-width: 1368px;
+    max-height: 768px;
+    width: 100%;
+    height: 100%;
+    background: #0c141c;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.products-main-box .top-nav { 
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.products-main-box .top-nav .tienda-logo{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.products-main-box .top-nav .btnclose { 
+    padding: 2rem;
+    transition: 1s;
+}
+.products-main-box .top-nav .btnclose:hover { 
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.products-main-box .top-nav .tienda-logo img { 
+    margin-top: -5px;
+}
+.bottom-box {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 250px;
+}
+.img-bg { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.1;
+}
+.img-bg img { 
+    width: 100%;
+    height: 100%;
+}
+.bottom-box::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.bottom-box::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+.bottom-box::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 153, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #0c141c;  /* creates padding around scroll thumb */
+  }
+
+
+.box-css { 
+    width: 50%;
+    height: 100%;
+    background: #2ea2e6;
+    border-radius: 100%;
+    position: absolute;
+    top: -60%;
+    right: -30%;
+    filter: blur(300px);
+}
+
+.bottom-navbar { 
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.bottom-navbar .box-opciones { 
+    width: 50%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.283);
+    border-radius: 100px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) { 
+    .bottom-navbar .box-opciones { 
+        width: 90%;
+    }
+}
+@media (max-width: 450px) { 
+    .bottom-box { 
+        padding: 2rem 2rem;
+    }
+    .box-product { 
+        width: 100%;
+        transform: skew(5deg);
+    }
+    .bottom-navbar .box-opciones { 
+        gap: 5px;
+        font-size: 0.8em;
+        color: black;
+    }
+}
+.bottom-navbar .box-opciones .btn-icon {
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.bottom-navbar .box-opciones .btn-icon:hover { 
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.box-product { 
+    width: 300px;
+    height: 220px;
+    background: white;
+    transform: skew(-5deg);
+    position: relative;
+    color: black;
+    transition: 0.3s;
+}
+.box-product .box-coins {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -10px;
+    z-index: 1000;
+}
+.box-product .box-coins span { 
+    background: #2ea2e6;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #2ea2e6;
+    text-transform: uppercase;
+}
+.box-product .img-box { 
+    width: 100%;
+    height: 150px;
+    transition: 0.3s;
+    background: black;
+}
+.box-product:hover{ 
+    cursor: pointer;
+    box-shadow: 5px 5px 0px #2ea2e6;
+    transition: 0.3s;
+}
+.box-product:hover > .img-box { 
+    z-index: -5;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.box-product .img-box img { 
+    width: 100.7%;
+    height: 100%;
+    margin-left: -0.5%;
+    object-fit: cover;
+}
+.box-product .info-bottom { 
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+}
+.box-product h4 { 
+    margin-bottom: 5px;
+}
+.box-product p { 
+    font-size: 0.9em;
+    font-weight: 500;
+}

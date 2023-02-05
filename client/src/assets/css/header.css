@@ -1,0 +1,50 @@
+header { 
+    width: 100%;
+    padding: 6vh 6vw 0;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header a > img { 
+    width: 25vh;
+}
+header nav ul { 
+    display: flex;
+    gap: 30px;
+}
+header nav ul li a { 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6vh;
+    text-transform: uppercase;
+    color: #fff6;
+    white-space: nowrap;
+    transition: 0.35s;
+}
+header nav ul li a i { 
+    margin-right: 0.9vh;
+    opacity: 0.4;
+}
+header nav ul li a:hover { 
+    color: white;
+    transition: 0.35s;
+}
+header .active { 
+    color: white;
+}
+header .active > i {
+    opacity: 1;
+}
+
+@media (max-width: 1125px) { 
+    header { 
+        justify-content: center;
+    }
+    header nav ul { 
+        display: none;
+    }
+}
